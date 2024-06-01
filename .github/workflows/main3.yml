@@ -34,7 +34,7 @@ jobs:
           host: linux
           target: desktop
           arch: gcc_64
-          dir: ${{ runner.temp }}/Qt
+          dir: ${{ github.workspace }}/Qt
 
       - name: Add common build aliases into your shell
         run: |
