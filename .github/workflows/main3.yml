@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           submodules: 'recursive' # This ensures that submodules are also cloned recursively
 
@@ -28,7 +28,7 @@ jobs:
           sudo apt-get install -y build-essential cmake
 
       - name: Set up Qt
-        uses: jurplel/install-qt-action@v2
+        uses: jurplel/install-qt-action@v4
         with:
           version: ${{ matrix.qt-version }}
           host: linux
