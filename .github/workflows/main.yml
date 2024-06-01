@@ -39,9 +39,6 @@ jobs:
       - name: Add common build aliases into your shell
         run: |
           source rvcmds.sh
-
-      - name: rvbootstrap
-        run: |
           rvbootstrap
           
       - name: Build OpenRV
