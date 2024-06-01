@@ -43,7 +43,4 @@ jobs:
           
       - name: Build OpenRV
         run: |
-          mkdir build
-          cd build
-          cmake ..
-          make
+          rvmk
