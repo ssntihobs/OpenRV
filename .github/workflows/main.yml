@@ -35,6 +35,11 @@ jobs:
           target: desktop
           arch: gcc_64
           dir: ${{ runner.temp }}/Qt
+
+      - name: Add common build aliases into your shell
+        run: |
+          source rvcmds.sh
+          rvbootstrap
           
       - name: Build OpenRV
         run: |
