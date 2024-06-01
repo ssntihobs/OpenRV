@@ -31,7 +31,7 @@ jobs:
         uses: jurplel/install-qt-action@v2
         with:
           version: ${{ matrix.qt-version }}
-          host: ubuntu-20.04
+          host: linux
           target: desktop
           arch: gcc_64
           dir: ${{ runner.temp }}/Qt
